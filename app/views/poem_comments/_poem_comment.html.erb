@@ -1,0 +1,9 @@
+<% @poem.poem_comments.each do |comment| %>
+  <p>
+    comment : <%= comment.content %>
+  
+  <%= link_to 'Destroy Comment', [poem_comment.poem, poem_comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
+<% end %>

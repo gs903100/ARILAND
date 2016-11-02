@@ -1,0 +1,18 @@
+<p>
+  <strong>Picture:</strong>
+  <%= @poem.picture %>
+</p>
+ 
+<p>
+  <strong>Information:</strong>
+  <%= @poem.information %>
+</p>
+
+<h2>Comments</h2>
+<%= render @poem.poem_comments %>
+
+<h2>Add a comment</h2>
+<%= render "poem_comments/form" %>
+
+<%= link_to 'Edit', edit_poem_path(@poem) %> |
+<%= link_to 'Back', poems_path %>
