@@ -44,6 +44,6 @@ class PoemsController < ApplicationController
 
   private
   	def poem_params
-    		params.require(:poem).permit(:picture, :information)
+    		params.require(:poem).permit(:image, :information)
   	end
 end
