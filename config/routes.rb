@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   get 'welcome/index'
-  resources :about
+  get 'about' => 'about#new'
   resources :poems do
     resources :poem_comments
   end
