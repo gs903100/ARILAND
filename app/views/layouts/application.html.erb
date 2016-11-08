@@ -26,7 +26,7 @@
        </div>
        <div class="navbar-collapse collapse">
          <ul class="nav navbar-nav">
-           <li class="active"><a href="http://localhost:3000/about/new">About</a></li>
+           <li class="active"><a href="http://localhost:3000/about">About</a></li>
            <li><a href="http://localhost:3000/poems">Poem</a></li>
            <li><a href="http://ssd.opencollege.kr/capstones/12">Story</a></li>
            <li>
@@ -34,7 +34,7 @@
               <%= link_to "log-out",destroy_user_session_path,method: :delete %>
             <% else %>
               <%= link_to "facebook-log-in"	,user_facebook_omniauth_authorize_path %>
-            <% end %>	
+            <% end %>
            </li>
            <li>
            <% if user_signed_in? %>
