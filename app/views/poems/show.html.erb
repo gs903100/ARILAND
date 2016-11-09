@@ -1,18 +1,23 @@
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag @poem.image %>
-</p>
- 
-<p>
-  <strong>Information:</strong>
-  <%= @poem.information %>
-</p>
+<div class="row">
+	<div class="col-md-3 col-xs-0"></div>
+		<div class="col-md-6 col-xs-12 poem">
+		<p>
+  			<%= image_tag @poem.image, style: 'width:61%;height:auto;' %>
+		</p>
+ 		<div class="cocenter"> 
+		<p>
+  		<strong><%= @poem.information %></strong>
+		</p>
+		</div>
+		<div class="poem">
+		<h3>Comments</h3>
+		<%= render @poem.poem_comments %>
 
-<h2>Comments</h2>
-<%= render @poem.poem_comments %>
+		<%= render "poem_comments/form" %>
 
-<h2>Add a comment</h2>
-<%= render "poem_comments/form" %>
-
-<%= link_to 'Edit', edit_poem_path(@poem) %> |
-<%= link_to 'Back', poems_path %>
+		<%= link_to 'Edit', edit_poem_path(@poem) %> |
+		<%= link_to 'Back', poems_path %>
+		</div>
+	</div>
+	<div class="col-md-3 col-xs-0"></div>
+</div>
