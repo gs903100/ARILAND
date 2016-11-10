@@ -81,8 +81,15 @@ ActiveRecord::Schema.define(version: 20161103070237) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+<<<<<<< HEAD
  add_foreign_key "poem_comments", "poems"
  add_foreign_key "poem_comments", "users"
  add_foreign_key "story_comments", "stories"
  add_foreign_key "story_comments", "users"
+=======
+  add_foreign_key "poem_comments", "poems"
+  add_foreign_key "poem_comments", "users"
+  add_foreign_key "story_comments", "stories"
+  add_foreign_key "story_comments", "users"
+>>>>>>> e53fef645401f7317f5b4c78aa0ba8f12e27f422
 end
