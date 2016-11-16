@@ -1,17 +1,32 @@
 // Place all the styles related to the Poems controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.cocenter {
-    margin: auto;
-    border: 2px solid gray;
-    width: 83%;
-    padding: 15px;
-    text-align: center
+.margin-tb {
+	margin: auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
+.Listingpoems {
+	margin: auto;
+	width: 35%;
+    	padding: 25px;
+    	border: 2px solid gray;
+    	text-size: 11px;
+    	text-align: center;
+}
+.cocenter {
+	margin: auto;
+	border: 2px solid gray;
+    	width: 83%;
+   	padding: 15px;
+   	text-align: center
+}
+
 .poem {
-    margin: auto;
-    width: 50%;
-    padding: 21px;
-    text-align: center
-}    
+	margin: auto;
+   	width: 80%;
+    	padding: 100px;
+    	text-align: center;
+    letter-spacing: 1px;
+    font-family: "Courier New", monospace;
+}

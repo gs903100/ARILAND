@@ -14,7 +14,9 @@
 		<%= render @poem.poem_comments %>
 
 		<%= render "poem_comments/form" %>
-
+		<%= link_to 'Destroy', poem_path(@poem), 
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } %> |
 		<%= link_to 'Edit', edit_poem_path(@poem) %> |
 		<%= link_to 'Back', poems_path %>
 		</div>

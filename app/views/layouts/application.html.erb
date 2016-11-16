@@ -21,6 +21,7 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
          </button>
          <a class="navbar-brand" href="http://localhost:3000/">ARI-LAND</a>
        </div>
@@ -28,7 +29,8 @@
          <ul class="nav navbar-nav">
            <li><a href="http://localhost:3000/about">About</a></li>
            <li><a href="http://localhost:3000/poems">Poem</a></li>
-           <li><a href="http://ssd.opencollege.kr/capstones/12">Story</a></li>
+           <li><a href="http://localhost:3000/stories">Story</a></li>
+           <li><a href="http://localhost:3000/photos">Photo</a></li>
            <li>
             <% if user_signed_in? %>
               <%= link_to "log-out",destroy_user_session_path,method: :delete %>

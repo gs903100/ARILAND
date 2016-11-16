@@ -1,0 +1,23 @@
+
+  <div class="Listingpoems">
+    <h1>Listing stories</h1>
+    <%= link_to 'New story', new_story_path %>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-xs-0"></div>
+    <div class="col-md-6 col-xs-12">
+      <table>
+        <% @stories.each do |story| %>
+        <tr>
+          <td class="story"><%= story.title %></td>
+          <td><%= link_to 'Show', story_path(story) %></td>
+          <td><%= link_to 'Edit', edit_story_path(story) %></td>
+          <td><%= link_to 'Destroy', story_path(story), 
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+      </table>
+    </div>
+    <div class="col-md-3 col-xs-0"></div>
+  </div>

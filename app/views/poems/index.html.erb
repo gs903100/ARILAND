@@ -1,15 +1,15 @@
-<div>
+<div class="Listingpoems">
 <h1>Listing poems</h1>
 <%= link_to 'New poem', new_poem_path%>
 </div>
 <div class="row">
-	<div class="col-md-1"></div>
-	<div class="col-md-10">
+	<div class="col-md-1 col-xs-0"></div>
+	<div class="col-md-10 col-xs-12">
 	  <% @poems.each do |poem| %>
-	  	<div class="col-md-4">
-	      <%= link_to((image_tag poem.image, style: 'width:100%;height:auto;'),poem_path(poem))%>
+	  	<div class="col-md-4 margin-tb">
+		      <%= link_to((image_tag poem.image, style: 'width:99%;height:auto;'),poem_path(poem))%>
 	     </div>
 	  <% end %>
 	</div>
-	<div class="col-md-1"></div>
+	<div class="col-md-1 col-xs-0"></div>
 </div>

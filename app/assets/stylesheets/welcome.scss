@@ -7,16 +7,27 @@
     		border: 4px solid gray;
          background-color: seashell;
          opacity: 0.8;
-    		width: 119%;
-    		padding: 140px;
+    		width: 102%;
+    		padding: 125px;
     		text-align: center
 	}
 }
 
 .pinksun {
 	background-image: asset-url("pinkSUN.jpeg");
-	magin: 0px;
-	width: 103%;
-    	padding: 100px;
+	margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 107.1%;
+    padding: 5.3%;
+    font-family: "Courier New", monospace;
+
+}    
+
+.ps {
+    margin: auto;
+    opacity: 0.8;
+    width: 110%;
+    padding: 130px;
     text-align: center
-}
+}            
